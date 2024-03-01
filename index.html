@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사킥의 중고마켓</title>
+    <style>
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+        .hero h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .item {
+            text-align: center;
+            margin: 20px;
+            flex: 0 1 30%; /* 휴대폰에서도 30%의 너비를 유지하도록 설정 */
+        }
+        .item img {
+            max-width: 100%; /* 이미지가 컨테이너를 넘어가지 않도록 설정 */
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .price {
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>사킥의 중고마켓</h1>
+    </div>
+    <h2 class="category">카테고리</h2>
+    <div class="items">
+        <div class="item">
+            <img src="노트북.jpeg" alt="노트북">
+            <p class="price">가격: ₩100,000</p>
+            <a href="notebooks.html" class="btn">구매하기</a>
+        </div>
+        <div class="item">
+            <img src="사진기.jpeg" alt="사진기">
+            <p class="price">가격: ₩30,000</p>
+            <a href="cameras.html" class="btn">구매하기</a>
+        </div>
+        <div class="item">
+            <img src="화장품.jpeg" alt="화장품">
+            <p class="price">가격: ₩5,000</p>
+            <a href="cosmetics.html" class="btn">구매하기</a>
+        </div>
+    </div>
+</body>
+</html>
+
